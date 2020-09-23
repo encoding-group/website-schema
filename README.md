@@ -100,8 +100,8 @@ If a property value is unknown or empty, do:
 ```
 empty string: ''
 empty array: []
-unkown int: false
-no given object: false
+empty int: false
+empty object: false
 ```
 
 ## GoLive Checklist
