@@ -2,12 +2,12 @@
 
 ## Unified data schema for content
 
-Typically, a websites content can be structured in 5 different types of data:
+Typically, a websites content can be structured in 5-6 different types of data:
 - `site`: General information about the website
 - `pageAbstract`: All information needed to render a preview of a single page
 - `page`: All information needed to render a full single page view
+- `pages`: A list of (abstracted) `page` objects, required to render a list of pages
 - `file`: All information to render a file (e.g. image)
-- `pages`: A list of (abstracted) page objects, required to render a list of pages
 - `files`: A list of `file` objects
 
 **site obejct**
@@ -44,7 +44,7 @@ const pageAbstract = {
     slug: 'example-post',
     image: file,
     date: '1999-12-31',
-    tags: ['keyword 1', 'keyword 2'],
+    tags: ['keyword 1', 'keyword 2']
 };
 ```
 
@@ -55,6 +55,11 @@ const page = { ...pageAbstract,
     pages: pages,
     text: '<p>Page content</p>'
 };
+```
+
+**pages array**
+```js
+const pages = [ pageAbstract, pageAbstract, ... ];
 ```
 
 **file obejct**
@@ -83,11 +88,6 @@ const file = {
         },
     ]
 };
-```
-
-**pages array**
-```js
-const pages = [ pageAbstract, pageAbstract, ... ];
 ```
 
 **files array**
