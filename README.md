@@ -105,7 +105,7 @@ empty object: false
 ```
 
 ## GoLive Checklist
-1. Check for browser compability
+1. Check for browser compability in at least Chrome, Safari, Firefox
 2. Check if HTML `<head>` is valid and complete
 3. Add HTML, OpenGraph and JsonLD metadata and validate
 4. Add a `robots.txt` and `sitemap.xml` and validate
