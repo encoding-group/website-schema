@@ -10,7 +10,7 @@ Typically, a websites content can be structured in 5-6 different types of data:
 - `file`: All information to render a file (e.g. image)
 - `files`: A list of `file` objects
 
-**site obejct**
+**site** obejct
 ```js
 const site = {
     title: 'Website title',
@@ -29,7 +29,7 @@ const site = {
         country: 'Country',
     },
     links: [
-        ['Instagram','https://instagram/example'],
+        ['Instagram','https://instagram.com/example'],
         ['Facebook','https://facebook.com/example'],
     ],
     image: 'image-1000px.jpg',
@@ -37,7 +37,7 @@ const site = {
 };
 ```
 
-**pageAbstract object**
+**pageAbstract** object
 ```js
 const pageAbstract = {
     title: 'Example Post',
@@ -48,7 +48,7 @@ const pageAbstract = {
 };
 ```
 
-**page object**
+**page** object
 ```js
 const page = { ...pageAbstract,
     images: images,
@@ -57,12 +57,12 @@ const page = { ...pageAbstract,
 };
 ```
 
-**pages array**
+**pages** array
 ```js
 const pages = [ pageAbstract, pageAbstract, ... ];
 ```
 
-**file obejct**
+**file** obejct
 ```js
 const file = {
     name: 'image-1.jpg',
@@ -90,7 +90,7 @@ const file = {
 };
 ```
 
-**files array**
+**files** array
 ```js
 const files = [ file, file, ... ];
 ```
@@ -105,3 +105,13 @@ no given object: false
 ```
 
 ## GoLive Checklist
+1. Check for browser compability
+2. Check if HTML `<head>` is valid and complete
+3. Add HTML, OpenGraph and JsonLD metadata and validate
+4. Add a `robots.txt` and `sitemap.xml` and validate
+5. Switch on server side caching
+6. Add leverage browser caching to file assets
+7. Check browser and server console for unneccessary output and errors
+8. Validate Html and CSS
+9. Test page speed
+10. Submit website url and sitemap to search engines
